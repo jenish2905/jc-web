@@ -1,0 +1,219 @@
+/* =========================
+   RESET
+========================= */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #0b0f19;
+    color: white;
+    min-height: 100vh;
+}
+
+
+/* =========================
+   HEADER
+========================= */
+.first {
+    width: 100%;
+    padding: 25px 20px;
+    text-align: center;
+
+    background: #111827;
+    border-bottom: 2px solid #00e5ff;
+
+    box-shadow: 0 0 20px rgba(0, 229, 255, 0.3);
+}
+
+.first h2 {
+    font-size: 32px;
+    letter-spacing: 3px;
+    color: #00e5ff;
+    text-shadow: 0 0 10px #00e5ff;
+}
+
+
+/* =========================
+   MAIN CONTAINER
+========================= */
+.cont {
+    width: 100%;
+    max-width: 1100px;
+    margin: 50px auto;
+    padding: 20px;
+}
+
+
+/* =========================
+   GAMES CONTAINER
+========================= */
+.games {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    gap: 35px;
+    flex-wrap: wrap;
+}
+
+
+/* =========================
+   GAME CARDS
+========================= */
+.game1,
+.game2 {
+    width: 300px;
+    min-height: 380px;
+
+    padding: 25px;
+
+    text-align: center;
+
+    background: rgba(17, 24, 39, 0.9);
+
+    border: 1px solid #00e5ff;
+    border-radius: 20px;
+
+    box-shadow:
+        0 0 10px rgba(0, 229, 255, 0.2),
+        inset 0 0 20px rgba(0, 229, 255, 0.05);
+
+    transition: 0.3s ease;
+}
+
+
+/* Card Hover */
+.game1:hover,
+.game2:hover {
+    transform: translateY(-10px);
+
+    box-shadow:
+        0 0 20px rgba(0, 229, 255, 0.5),
+        0 0 50px rgba(0, 229, 255, 0.2);
+}
+
+
+/* =========================
+   GAME TITLE
+========================= */
+.game1 h5,
+.game2 h5 {
+    font-size: 22px;
+    margin-bottom: 20px;
+
+    color: #ffffff;
+
+    letter-spacing: 1px;
+}
+
+
+/* =========================
+   GAME IMAGE
+========================= */
+.game1 img,
+.game2 img {
+    width: 200px;
+    height: 200px;
+
+    object-fit: contain;
+
+    border-radius: 15px;
+
+    margin-bottom: 20px;
+
+    transition: 0.3s ease;
+}
+
+
+/* Image Hover */
+.game1:hover img,
+.game2:hover img {
+    transform: scale(1.05);
+}
+
+
+/* =========================
+   BUTTON
+========================= */
+button {
+    border: none;
+    outline: none;
+
+    padding: 12px 25px;
+
+    border-radius: 10px;
+
+    background: #00e5ff;
+
+    cursor: pointer;
+
+    transition: 0.3s ease;
+
+    box-shadow: 0 0 10px rgba(0, 229, 255, 0.4);
+}
+
+
+/* Button Hover */
+button:hover {
+    transform: scale(1.05);
+
+    background: #00bcd4;
+
+    box-shadow:
+        0 0 15px #00e5ff,
+        0 0 30px rgba(0, 229, 255, 0.5);
+}
+
+
+/* =========================
+   LINK
+========================= */
+button a {
+    text-decoration: none;
+
+    color: #061018;
+
+    font-size: 15px;
+    font-weight: bold;
+}
+
+
+/* =========================
+   MOBILE RESPONSIVE
+========================= */
+@media (max-width: 700px) {
+
+    .first {
+        padding: 20px;
+    }
+
+    .first h2 {
+        font-size: 26px;
+    }
+
+    .cont {
+        margin-top: 30px;
+        padding: 15px;
+    }
+
+    .games {
+        flex-direction: column;
+        align-items: center;
+        gap: 25px;
+    }
+
+    .game1,
+    .game2 {
+        width: 90%;
+        max-width: 330px;
+    }
+
+    .game1 img,
+    .game2 img {
+        width: 180px;
+        height: 180px;
+    }
+}
