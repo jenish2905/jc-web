@@ -1,0 +1,176 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background: #080b16;
+    color: white;
+
+    padding: 20px;
+}
+
+.container {
+    width: 100%;
+    max-width: 500px;
+
+    text-align: center;
+}
+
+h1 {
+    font-size: 38px;
+    margin-bottom: 8px;
+}
+
+.subtitle {
+    color: #aaa;
+    margin-bottom: 25px;
+}
+
+.calculator {
+    background: #111625;
+
+    padding: 30px;
+
+    border-radius: 20px;
+
+    box-shadow:
+        0 0 30px rgba(0, 255, 255, 0.15);
+}
+
+label {
+    display: block;
+
+    text-align: left;
+
+    margin-top: 15px;
+    margin-bottom: 8px;
+
+    font-weight: bold;
+}
+
+input,
+select {
+    width: 100%;
+
+    padding: 14px;
+
+    border: 1px solid #30374d;
+
+    border-radius: 10px;
+
+    background: #080b16;
+
+    color: white;
+
+    font-size: 16px;
+
+    outline: none;
+}
+
+input:focus,
+select:focus {
+    border-color: #00ffff;
+}
+
+button {
+    width: 100%;
+
+    margin-top: 20px;
+
+    padding: 14px;
+
+    border: none;
+
+    border-radius: 10px;
+
+    background: #00ffff;
+
+    color: #001010;
+
+    font-size: 17px;
+
+    font-weight: bold;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+button:hover {
+    transform: translateY(-2px);
+
+    box-shadow:
+        0 0 15px rgba(0, 255, 255, 0.5);
+}
+
+.clear-btn {
+    background: #ff4d6d;
+    color: white;
+}
+
+.result-box {
+    margin-top: 25px;
+
+    padding: 20px;
+
+    background: #080b16;
+
+    border-radius: 15px;
+
+    border: 1px solid #30374d;
+}
+
+.result-box span {
+    color: #aaa;
+
+    font-size: 14px;
+}
+
+#result {
+    margin-top: 12px;
+
+    font-size: 28px;
+
+    font-weight: bold;
+
+    color: #00ffff;
+
+    word-break: break-all;
+}
+
+.copy-btn {
+    background: #252c40;
+
+    color: white;
+
+    font-size: 14px;
+}
+
+#error {
+    margin-top: 15px;
+
+    color: #ff4d6d;
+
+    font-weight: bold;
+}
+
+@media (max-width: 500px) {
+
+    h1 {
+        font-size: 30px;
+    }
+
+    .calculator {
+        padding: 20px;
+    }
+}
+
