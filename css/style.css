@@ -205,15 +205,86 @@ button a {
         gap: 25px;
     }
 
-    .game1,
-    .game2 {
+    .game1{
         width: 90%;
         max-width: 330px;
     }
 
-    .game1 img,
-    .game2 img {
+    .game1 img{
         width: 180px;
         height: 180px;
+    }
+}
+
+/* =========================
+   FOOTER
+========================= */
+
+.footer {
+    width: 100%;
+    margin-top: 60px;
+    padding: 30px 20px;
+
+    background: #111827;
+
+    text-align: center;
+
+    border-top: 2px solid #00e5ff;
+
+    box-shadow: 0 -5px 20px rgba(0, 229, 255, 0.25);
+}
+
+
+/* JC WEB */
+.footer-content h2 {
+    margin: 0 0 15px;
+
+    font-size: 28px;
+    letter-spacing: 3px;
+
+    color: #00e5ff;
+
+    text-shadow: 0 0 10px #00e5ff;
+}
+
+
+/* Copyright */
+.footer .copyright {
+    margin: 0;
+
+    font-size: 14px;
+
+    color: #9ca3af;
+}
+
+
+/* Hover effect */
+.footer-content h2:hover {
+    text-shadow:
+        0 0 10px #00e5ff,
+        0 0 20px #00e5ff,
+        0 0 30px #00e5ff;
+
+    transition: 0.3s;
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 600px) {
+
+    .footer {
+        padding: 25px 15px;
+        margin-top: 40px;
+    }
+
+    .footer-content h2 {
+        font-size: 24px;
+    }
+
+    .footer .copyright {
+        font-size: 12px;
     }
 }
