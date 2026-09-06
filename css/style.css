@@ -63,8 +63,7 @@ body {
 /* =========================
    GAME CARDS
 ========================= */
-.game1,
-.game2 {
+.game1{
     width: 300px;
     min-height: 380px;
 
@@ -86,8 +85,7 @@ body {
 
 
 /* Card Hover */
-.game1:hover,
-.game2:hover {
+.game1:hover {
     transform: translateY(-10px);
 
     box-shadow:
@@ -99,8 +97,7 @@ body {
 /* =========================
    GAME TITLE
 ========================= */
-.game1 h5,
-.game2 h5 {
+.game1 h5{
     font-size: 22px;
     margin-bottom: 20px;
 
@@ -113,8 +110,7 @@ body {
 /* =========================
    GAME IMAGE
 ========================= */
-.game1 img,
-.game2 img {
+.game1 img {
     width: 200px;
     height: 200px;
 
@@ -129,8 +125,7 @@ body {
 
 
 /* Image Hover */
-.game1:hover img,
-.game2:hover img {
+.game1:hover img {
     transform: scale(1.05);
 }
 
